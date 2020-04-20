@@ -1,4 +1,4 @@
-# Bug Tracker Web Application
+# Bug Tracker web application
 *Author: [Fernando França (フランサ)](https://github.com/furansa)*
 
 *Last update: 2020-04-20 14:31:00 -0300.*
