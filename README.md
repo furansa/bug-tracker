@@ -17,7 +17,7 @@ features like:
 * Health monitoring and metrics
 * Messaging with pub/sub applications
 
-Technologies applied:
+Tools and technologies applied:
 
 * Spring Boot
 * Spring MVC

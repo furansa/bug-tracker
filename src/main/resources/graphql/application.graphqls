@@ -1,0 +1,10 @@
+type Application {
+    id: ID!
+    name: String!
+    owner: String!
+    description: String!
+}
+
+type Query {
+    getAllApplications: [Application]!
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Bug Tracker Application</title>
+</head>
+<body>
+<div>
+    <h2>Welcome</h2>
+
+    <h4><a href="http://localhost:8080/graphiql">Graph<i>i</i>QL Interface</a></h4>
+    <h4>REST Interface</h4>
+    <ul>
+        <li><a href="http://localhost:8080/api/v1/applications">Applications</a></li>
+        <li><a href="http://localhost:8080/api/v1/releases">Releases</a></li>
+        <li><a href="http://localhost:8080/api/v1/tickets">Tickets</a></li>
+    </ul>
+    <h4>Monitoring</h4>
+    <ul>
+        <li><a href="http://localhost:8080/actuator/beans">Beans</a></li>
+        <li><a href="http://localhost:8080/actuator/health">Health</a></li>
+        <li><a href="http://localhost:8080/actuator/info">Info</a></li>
+        <li><a href="http://localhost:8080/actuator/loggers">Loggers</a></li>
+        <li><a href="http://localhost:8080/actuator/mappings">Mappings</a></li>
+        <li><a href="http://localhost:8080/actuator/metrics">Metrics</a></li>
+    </ul>
+
+    <h6>Version: ${version}</h6>
+</div>
+</body>
+</html>

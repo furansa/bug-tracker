@@ -1,0 +1,89 @@
+### This file is intended to be used with any REST client tool, just make sure
+### the whole environment is up and running.
+
+### Retrieve all Applications
+GET http://localhost:8080/api/v1/applications HTTP/1.1
+
+### Retrieve one Application
+GET http://localhost:8080/api/v1/applications/1 HTTP/1.1
+
+### Create new Application
+POST http://localhost:8080/api/v1/applications HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Fortune Generator",
+    "description": "Random Fortune Messages Generator",
+    "owner": "Fernando"
+}
+
+### Update one Application
+PUT http://localhost:8080/api/v1/applications/2 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Fortune Generator",
+    "description": "Random Fortune Messages Generator",
+    "owner": "Mariana"
+}
+
+### Delete one Application
+DELETE http://localhost:8080/api/v1/applications/4 HTTP/1.1
+
+### Retrieve all Releases
+GET http://localhost:8080/api/v1/releases HTTP/1.1
+
+### Retrieve one Release
+GET http://localhost:8080/api/v1/releases/1 HTTP/1.1
+
+### Create new Release
+POST http://localhost:8080/api/v1/releases HTTP/1.1
+content-type: application/json
+
+{
+    "date": "20-04-2020",
+    "description": "Test Release"
+}
+
+### Update one Release
+PUT http://localhost:8080/api/v1/releases/2 HTTP/1.1
+content-type: application/json
+
+{
+    "date": "20-04-2020",
+    "description": "Updated Test Release"
+}
+
+### Delete one Release
+DELETE http://localhost:8080/api/v1/releases/2 HTTP/1.1
+
+### Retrieve all Tickets
+GET http://localhost:8080/api/v1/tickets HTTP/1.1
+
+### Retrieve one Ticket
+GET http://localhost:8080/api/v1/tickets/1 HTTP/1.1
+
+### Create new Ticket
+POST http://localhost:8080/api/v1/tickets HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Ticket REST Create Endpoint Failure",
+    "description": "Application fails while trying to create a new ticket at /api/v1/tickets",
+    "application": 1,
+    "status": "Opened"
+}
+
+### Update one Ticket
+PUT http://localhost:8080/api/v1/tickets/1 HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Ticket REST Create Endpoint Failure",
+    "description": "Application fails while trying to create a new ticket at /api/v1/tickets",
+    "application": 1,
+    "status": "Received"
+}
+
+### Delete one Ticket
+DELETE http://localhost:8080/api/v1/tickets/2 HTTP/1.1
